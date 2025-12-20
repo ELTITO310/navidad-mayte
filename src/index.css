@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Mountains+of+Christmas:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --sky-manana: linear-gradient(to bottom, #87ceeb, #e0f6ff);
+  --sky-tarde: linear-gradient(to bottom, #4a90e2, #87ceeb);
+  --sky-atardecer: linear-gradient(to bottom, #ff8c42, #ff3c38);
+  --sky-noche: linear-gradient(to bottom, #0b1d3a, #000000);
+}
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-happy: "Happy Monkey", cursive;
+  --font-christmas: "Mountains of Christmas", cursive;
+}
+
+.cloud {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: #ffffff 65px -15px 0 -5px, #ffffff 25px -25px, #ffffff 30px 10px,
+    #ffffff 60px 15px 0 -10px, #ffffff 85px 5px 0 -5px;
+}

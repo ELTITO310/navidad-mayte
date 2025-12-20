@@ -1,0 +1,133 @@
+.tree-container {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 20%;
+}
+
+@media (max-width: 768px) {
+    .tree-container {
+        left: 10%;
+        bottom: 10px;
+    }
+}
+
+.tree {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 0;
+}
+
+.night .cone {
+    background: radial-gradient(farthest-side at top, #013824, #011f1a);
+}
+
+.night .trunk {
+    background-color: #5a3a1a;
+}
+
+.night .star {
+    background: #eec511;
+    animation: star 2s infinite;
+    /* filter: drop-shadow(0 0 10px #ffca45); */
+}
+
+@keyframes star {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+.star {
+    width: 80px;
+  height: 80px;
+  background: #a18006;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  z-index: 4;
+  filter: drop-shadow(0.75em 0.75em 0.5em);
+    margin-bottom: -30px;
+}
+
+.cone {
+    width: 190px;
+  height: 140px;
+  border-radius: 45%;
+  background: radial-gradient(farthest-side at top, #026e46, #024e32);
+  mask-image: conic-gradient(
+    from 150deg at top,
+    #0000,
+    #000 1deg 60deg,
+    #0000 61deg
+  );
+    -webkit-mask-image: conic-gradient(
+        from 150deg at top,
+        #0000,
+        #000 1deg 60deg,
+        #0000 61deg
+    );
+
+    &:nth-child(2) {
+        margin-bottom: -90px;
+        z-index: 3;
+    }
+    &:nth-child(3) {
+        margin-bottom: -90px;
+        z-index: 2;
+        transform: scale(1.2);
+    }
+    &:nth-child(4) {
+        z-index: 1;
+        transform: scale(1.4);
+    }
+}
+
+@media (max-width: 768px) {
+    .cone {
+        width: 140px;
+        height: 100px;
+
+        &:nth-child(1) {
+            margin-bottom: -70px;
+        }
+        &:nth-child(2) {
+            margin-bottom: -70px;
+            transform: scale(1.1);
+        }
+        &:nth-child(3) {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.trunk {
+    width: 60px;
+    height: 100px;
+    background-color: #8b5a2b;
+    border-radius: 10px;
+    margin-top: -20px;
+}
+
+@media (max-width: 768px) {
+    .trunk {
+        width: 40px;
+        height: 70px;
+        margin-top: -15px;
+    }
+}
