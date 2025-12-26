@@ -1,0 +1,127 @@
+.modal-gift-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-gift {
+  background: #fffbe8;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 90vw;
+  min-width: 280px;
+  animation: modalGiftIn 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes modalGiftIn {
+  0% { transform: scale(0.7) translateY(40px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.modal-gift h2 {
+  font-family: var(--font-christmas, 'Mountains of Christmas', cursive);
+  color: #d7263d;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.modal-gift p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.modal-gift-btn {
+  background: #d7263d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.modal-gift-btn:hover {
+  background: #a81d2b;
+}
+
+.regalo {
+  width: 290px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.caja, .tapa {
+  background:
+    -webkit-radial-gradient(white 10%, transparent 15.1%),
+    -webkit-radial-gradient(white 7%, transparent 15.1%),
+  #f80000;
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+  position: relative;
+  margin: 0 auto;
+}
+.caja {
+  width: 90%;
+  height: 250px;
+}
+.tapa {
+  width: 95%;
+  height: 70px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.8);
+  z-index: 1;
+  padding: 0 2px;
+  background-color: #f80000;
+  /* transiciones */
+  top: 10px;
+  left: 0;
+  transition: 
+    top ease-out 0.5s,
+    left ease-out 0.5s,
+    transform ease-out 0.5s;
+}
+.caja span, .tapa span {
+  position: absolute;
+  display: block;
+  background: rgba(239, 184, 16, 0.8);
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+}
+.caja span:first-child {
+  width: 100%;
+  height: 60px;
+  top: 80px;
+}
+.caja span:last-child, .tapa span {
+  width: 60px;
+  height: 100%;
+  left: 170px;
+}
+.tapa span {
+  left: 172px;
+}
+.promo {
+  font-size: 30px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  position: relative;
+  height: 0;
+  top: 10px;
+  transition: all ease-out 0.7s;
+}
+.promo p {
+  font-size: 24px;
+  margin: 0;
+}
+.promo h2 {
+  font-size: 40px;
+  margin: 0;
+}

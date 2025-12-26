@@ -15,6 +15,12 @@
   --font-christmas: "Mountains of Christmas", cursive;
 }
 
+@layer components {
+  .title {
+    @apply text-4xl md:text-6xl font-christmas text-center font-black drop-shadow-[0_0_10px_rgba(255,0,0,0.8)];
+  }
+}
+
 .cloud {
   position: absolute;
   background: #fff;

@@ -1,4 +1,4 @@
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
 
 export type SectionComponentProps = React.HTMLAttributes<HTMLElement> & {
     ref?: React.Ref<HTMLElement>;

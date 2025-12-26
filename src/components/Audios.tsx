@@ -1,4 +1,4 @@
-import SectionComponent from "./SectionComponent";
+import SectionComponent from "./ui/SectionComponent";
 
 const audios = [
     {
@@ -21,7 +21,7 @@ const audios = [
 
 const Audios = () => {
     return ( <SectionComponent className="flex-col gap-5">
-        <h1 className="text-5xl font-black text-red-500 font-christmas drop-shadow-[0_0_10px_rgba(255,0,0,0.8)] text-center">
+        <h1 className="title text-red-500">
         Audios para ti de mi hermosa Voz
       </h1>
       <p className="max-w-3/4 md:max-w-280 font-happy">

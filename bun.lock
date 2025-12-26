@@ -9,8 +9,10 @@
         "motion": "^12.23.26",
         "react": "^19.2.0",
         "react-dom": "^19.2.0",
+        "react-icons": "^5.5.0",
         "tailwindcss": "^4.1.18",
         "tw-merge": "^0.0.1-alpha.3",
+        "zustand": "^5.0.9",
       },
       "devDependencies": {
         "@eslint/js": "^9.39.1",
@@ -497,6 +499,8 @@
 
     "react-dom": ["react-dom@19.2.3", "", { "dependencies": { "scheduler": "^0.27.0" }, "peerDependencies": { "react": "^19.2.3" } }, "sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg=="],
 
+    "react-icons": ["react-icons@5.5.0", "", { "peerDependencies": { "react": "*" } }, "sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw=="],
+
     "resolve-from": ["resolve-from@4.0.0", "", {}, "sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g=="],
 
     "rollup": ["rollup@4.53.5", "", { "dependencies": { "@types/estree": "1.0.8" }, "optionalDependencies": { "@rollup/rollup-android-arm-eabi": "4.53.5", "@rollup/rollup-android-arm64": "4.53.5", "@rollup/rollup-darwin-arm64": "4.53.5", "@rollup/rollup-darwin-x64": "4.53.5", "@rollup/rollup-freebsd-arm64": "4.53.5", "@rollup/rollup-freebsd-x64": "4.53.5", "@rollup/rollup-linux-arm-gnueabihf": "4.53.5", "@rollup/rollup-linux-arm-musleabihf": "4.53.5", "@rollup/rollup-linux-arm64-gnu": "4.53.5", "@rollup/rollup-linux-arm64-musl": "4.53.5", "@rollup/rollup-linux-loong64-gnu": "4.53.5", "@rollup/rollup-linux-ppc64-gnu": "4.53.5", "@rollup/rollup-linux-riscv64-gnu": "4.53.5", "@rollup/rollup-linux-riscv64-musl": "4.53.5", "@rollup/rollup-linux-s390x-gnu": "4.53.5", "@rollup/rollup-linux-x64-gnu": "4.53.5", "@rollup/rollup-linux-x64-musl": "4.53.5", "@rollup/rollup-openharmony-arm64": "4.53.5", "@rollup/rollup-win32-arm64-msvc": "4.53.5", "@rollup/rollup-win32-ia32-msvc": "4.53.5", "@rollup/rollup-win32-x64-gnu": "4.53.5", "@rollup/rollup-win32-x64-msvc": "4.53.5", "fsevents": "~2.3.2" }, "bin": { "rollup": "dist/bin/rollup" } }, "sha512-iTNAbFSlRpcHeeWu73ywU/8KuU/LZmNCSxp6fjQkJBD3ivUb8tpDrXhIxEzA05HlYMEwmtaUnb3RP+YNv162OQ=="],
@@ -552,6 +556,8 @@
     "zod": ["zod@4.2.1", "", {}, "sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw=="],
 
     "zod-validation-error": ["zod-validation-error@4.0.2", "", { "peerDependencies": { "zod": "^3.25.0 || ^4.0.0" } }, "sha512-Q6/nZLe6jxuU80qb/4uJ4t5v2VEZ44lzQjPDhYJNztRQ4wyWc6VF3D3Kb/fAuPetZQnhS3hnajCf9CsWesghLQ=="],
+
+    "zustand": ["zustand@5.0.9", "", { "peerDependencies": { "@types/react": ">=18.0.0", "immer": ">=9.0.6", "react": ">=18.0.0", "use-sync-external-store": ">=1.2.0" }, "optionalPeers": ["@types/react", "immer", "react", "use-sync-external-store"] }, "sha512-ALBtUj0AfjJt3uNRQoL1tL2tMvj6Gp/6e39dnfT6uzpelGru8v1tPOGBzayOWbPJvujM8JojDk3E1LxeFisBNg=="],
 
     "@eslint-community/eslint-utils/eslint-visitor-keys": ["eslint-visitor-keys@3.4.3", "", {}, "sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag=="],
 
